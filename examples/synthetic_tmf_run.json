@@ -1,0 +1,57 @@
+{
+  "schema_version": "ensemble_run_v1",
+  "run_id": "SYNTHETIC-RAE-001",
+  "evaluation_at": "2026-11-03T21:00:00Z",
+  "asset": "TMF",
+  "horizon_sessions": 5,
+  "macro": {
+    "schema_version": "macro_regime_snapshot_v1",
+    "observed_at": "2026-10-30T20:00:00Z",
+    "available_at": "2026-10-30T21:00:00Z",
+    "artifact_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "probabilities": {"risk_on": 0.2, "risk_off": 0.6, "transition": 0.2}
+  },
+  "forecasts": [
+    {
+      "schema_version": "expert_forecast_v1", "model_id": "technical",
+      "model_version": "synthetic-tae-001", "asset": "TMF", "horizon_sessions": 5,
+      "origin_at": "2026-10-30T20:00:00Z", "available_at": "2026-10-31T01:00:00Z",
+      "expected_return": 0.01, "probability_positive": 0.54,
+      "artifact_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+    },
+    {
+      "schema_version": "expert_forecast_v1", "model_id": "fundamental",
+      "model_version": "synthetic-sffe-001", "asset": "TMF", "horizon_sessions": 5,
+      "origin_at": "2026-10-30T20:00:00Z", "available_at": "2026-10-31T01:00:00Z",
+      "expected_return": 0.005, "probability_positive": 0.51,
+      "artifact_sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+    },
+    {
+      "schema_version": "expert_forecast_v1", "model_id": "tmf",
+      "model_version": "synthetic-tmf-001", "asset": "TMF", "horizon_sessions": 5,
+      "origin_at": "2026-10-30T20:00:00Z", "available_at": "2026-10-31T01:00:00Z",
+      "expected_return": -0.002, "probability_positive": 0.47,
+      "artifact_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+    }
+  ],
+  "reliability": [
+    {
+      "schema_version": "expert_reliability_v1", "model_id": "technical",
+      "model_version": "synthetic-tae-001", "evaluated_through": "2026-10-25T20:00:00Z",
+      "available_at": "2026-10-27T10:00:00Z", "matured_outcomes": 90, "score": 0.7,
+      "artifact_sha256": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+    },
+    {
+      "schema_version": "expert_reliability_v1", "model_id": "fundamental",
+      "model_version": "synthetic-sffe-001", "evaluated_through": "2026-10-25T20:00:00Z",
+      "available_at": "2026-10-27T10:00:00Z", "matured_outcomes": 90, "score": 0.65,
+      "artifact_sha256": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+    },
+    {
+      "schema_version": "expert_reliability_v1", "model_id": "tmf",
+      "model_version": "synthetic-tmf-001", "evaluated_through": "2026-10-25T20:00:00Z",
+      "available_at": "2026-10-27T10:00:00Z", "matured_outcomes": 90, "score": 0.8,
+      "artifact_sha256": "1111111111111111111111111111111111111111111111111111111111111111"
+    }
+  ]
+}
